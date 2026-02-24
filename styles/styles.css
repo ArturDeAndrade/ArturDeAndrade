@@ -4,3 +4,29 @@
     border: none;
     margin: 0;
 }
+
+body {
+    padding: 0 3rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Banner */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* About me */
+
+/* Projects */
+
+/* Contact */
