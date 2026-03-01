@@ -178,6 +178,18 @@ a {
 
 /* About me */
 
+.photo {
+    float: right;
+    shape-outside: circle(50%);
+    
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: .5rem;
+
+    background-image: var(--black-gradient);
+}
+
 /* Projects */
 
 /* Contact */
