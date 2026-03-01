@@ -135,11 +135,45 @@ a {
 
 /* Banner */
 
-header {
+#banner {
+    background-image: var(--gradient);
+}
+
+.links {
+    align-self: flex-end;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6px;
+    border-radius: 50%;
+
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+.title {
+    text-align: center;
+    font: 700 58px var(--code);
+    letter-spacing: 6px;
+}
+
+.subtitle {
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    gap: .5rem;
+}
+
+.subtitle p {
+    font: 22px var(--heading);
 }
 
 /* About me */
