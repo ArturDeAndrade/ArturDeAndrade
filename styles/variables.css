@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* fonts */
+    --heading: 'Work Sans', sans-serif;
+    --paragraph: 'Hind', sans-serif;
+    --cta: 'Inter', sans-serif;
+    --code: 'Fira Code', monospace;
+
+    /* colors */
+    --black: #0d0d0d;
+    --dark-gray: #333;
+    --white: #f1f1f1;
+    --off-white: #f6f0e0;
+    --blue: #c0d6df;
+    --light-orange: #f37543;
+    --orange: #db470d;
+
+    /* gradients */
+    --black-gradient: radial-gradient(#2d2d2d, #131313);
+    --white-gradient: radial-gradient(#fdfdfd, #f2ecd5);
+
+    /* color variables */
+    --bg: var(--white);
+    --text: var(--black);
+    --accent: var(--orange);
+    --secondary: var(--blue);
+    --gradient: var(--white-gradient);
+}
+
+@media (prefers-color-scheme: light) {
+
+    /* dark mode */
+    :root {
+        --bg: var(--dark-gray);
+        --text: var(--off-white);
+        --accent: var(--light-orange);
+        --secondary: var(--off-white);
+        --gradient: var(--black-gradient);
+    }
+}
