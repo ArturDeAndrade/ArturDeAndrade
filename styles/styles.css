@@ -8,14 +8,129 @@
 }
 
 body {
-    padding: 0 3rem;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+
+    padding: 3rem;
+}
+
+h2 {
+    font: 500 36px var(--heading);
+}
+
+h3 {
+    font: 500 28px var(--heading);
+}
+
+p, li {
+    font: 14px var(--paragraph);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* CTA */
+
+.cta {
+    display: inline-block;
+
+    width: fit-content;
+    padding: .5rem 1rem;
+    border: 2px solid var(--text);
+    border-radius: calc(infinity * 1px);
+    box-shadow: 1px 2px;
+
+    font: 600 14px var(--cta);
+    background-color: var(--accent);
+    color: var(--text);
+
+    cursor: pointer;
+}
+
+.cta:hover {
+    transform: translate(-1px, -2px);
+    box-shadow: 2px 4px;
+}
+
+.cta:active {
+    transform: translate(1px, 2px);
+    box-shadow: 0 0;
+}
+
+/* icons */
+
+.icon-l {
+    width: 28px;
+    height: 28px;
+}
+
+.icon-s {
+    width: 12px;
+    height: 12px;
+
+    padding: 1px;
+    border: 2px solid var(--black);
+    
+    background-color: var(--accent);
+    color: var(--black);
+}
+
+/* Cards */
+
+.card {
+    width: 100%;
+    border: 2px solid var(--text);
+
+    background-image: var(--gradient);
+}
+
+.card img {
+    width: 100%;
+    border: 1px solid var(--text);
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 4px;
+    border-bottom: 2px solid var(--text);
+
+    background-color: var(--secondary);
+}
+
+.frame p {
+    font: 600 10px var(--code);
+    color: var(--black);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+
+    padding: 1.5rem 1rem;
+}
+
+.content p {
+    text-align: center;
 }
 
 /* Banner */
