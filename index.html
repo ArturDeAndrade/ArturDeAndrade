@@ -141,21 +141,41 @@
         <section id="contact">
             <h2>Contact</h2>
             <!-- E-mail form -->
-            <form action="">
-                <label for="email">E-mail:</label>
-                <br />
-                <input type="email" name="email" id="email">
-                <br />
-                <label for="message">Message:</label>
-                <br />
-                <input type="text" name="message" id="message">
-                <br />
+            <div class="card">
+                <div class="frame">
+                    <p>email.card</p>
+                    <div class="controls">
+                        <i class="icon-s fa-solid fa-window-minimize"></i>
+                        <i class="icon-s fa-solid fa-window-maximize"></i>
+                        <i class="icon-s fa-regular fa-window-maximize"></i>
+                    </div>
+                </div>
+                <form action="" class="content">
+                    <div class="field">
+                        <label class="label" for="email">E-mail:</label>
+                        <input class="input" type="email" name="email" id="email"
+                            placeholder="Your best e-mail goes here!">
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="message">Message:</label>
+                        <textarea class="input" name="message" id="message" rows="4"
+                            placeholder="Give me a short description of what kind of website you wanna make!"></textarea>
+                    </div>
+
                 <input class="cta" type="submit" value="Send e-mail">
             </form>
-            <!-- Links -->
-            <div class="links">
-                <a href="">GitHub</a>
-                <a href="">Linkedin</a>
+            </div>
+            <!-- Socials -->
+            <div class="socials">
+                <a href="" class="social">
+                    <i class="icon-l fa-brands fa-github"></i>
+                    GitHub
+                </a>
+                <a href="" class="social">
+                    <i class="icon-l fa-brands fa-linkedin-in"></i>
+                    Linkedin
+                </a>
             </div>
         </section>
     </main>
